@@ -6,7 +6,7 @@ import frontCard from "../assets/images/bg-card-front.png";
 import backCard from "../assets/images/bg-card-back.png";
 
 const CardDetails = () => {
-  const { cardName, cardNumber, cardExpDate, cardCVC } =
+  const { cardName, cardNumber, cardExpDateMonth, cardExpDateYear, cardCVC } =
     useContext(CardContext);
 
   return (
@@ -16,8 +16,12 @@ const CardDetails = () => {
         <div className="frontCardDits">
           <h1>{cardNumber}</h1>
           <div className="up">
-          <h3>{cardName}</h3>
-          <h3>{cardExpDate}</h3>
+            <h3>{cardName}</h3>
+            <div className="dates">
+              <h3>{cardExpDateMonth}</h3>
+              <em>/</em>
+              <h3>{cardExpDateYear}</h3>
+            </div>
           </div>
         </div>
       </div>

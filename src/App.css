@@ -70,7 +70,7 @@
   margin-left: 6em;
 }
 .cardDetails h1 {
-  font-size: 2.2em;
+  font-size: 30px;
   font-weight: 500;
 }
 .cardDetails h3 {
@@ -113,6 +113,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.cardDetails .frontCardDits .up .dates{
+  display: flex;
+}
+
 
 .cardDetails .backCardDits {
 }
