@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.form {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inputField {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputArea {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+}
+
+.cardDetailsHome {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.cardDetails {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  gap: 2em;
+}
+
+.cardDetails img{
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 2px 2px 21px -6px rgba(0,0,0,0.75);
+}
+/* 
+.cardDetails .topArea{
+  height: 100%;
+  width: 100%;
+  border: 2px solid yellow;
+} */
+
+.cardDetails .frontCardDits{
+  width: 445px;
+  height: 242px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  border: 2px solid yellow;
+}
+.cardDetails .img2{
+  margin-left: 6em;
+}
+.cardDetails h1 {
+  font-size: 2.2em;
+  font-weight: 500;
+}
+.cardDetails h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.formAreaHome {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* border: 2px solid green; */
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -100;
+}
+
+.background .left {
+  width: 35%;
+  height: 100%;
+  background: url("./assets/images/bg-main-desktop.png");
+}
+.background .right {
+  height: 100%;
+  background: hsl(0, 0%, 100%);
+  width: 65%;
+}
