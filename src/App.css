@@ -46,6 +46,8 @@
   display: flex;
 }
 
+/* cardDetails.jsx */
+
 .cardDetailsHome {
   display: flex;
   flex: 1;
@@ -53,7 +55,7 @@
   align-items: flex-end;
   justify-content: center;
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .cardDetails {
@@ -64,14 +66,17 @@
   justify-content: center;
   color: hsl(0, 0%, 100%);
   gap: 2em;
+  /* border: 2px solid blue; */
+  /* height: 100%;
+  width: 100%; */
 }
+
+/* .cardDetails > img{
+  margin-right: 6em;
+} */
 
 .cardDetails .img2 {
   margin-left: 6em;
-}
-.cardDetails h1 {
-  font-size: 30px;
-  font-weight: 500;
 }
 .cardDetails h3 {
   font-size: 18px;
@@ -103,6 +108,8 @@
   font-size: 24px;
 }
 .cardDetails .frontCardDits h1 {
+  font-size: 34px;
+  font-weight: 500;
   width: 90%;
 }
 
@@ -112,14 +119,61 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0.5em;
+  /* border: 2px solid red; */
+}
+@media screen and (max-width: 900px) {
+  .cardDetails .frontCardDits h1 {
+    font-size: 26px;
+    font-weight: 400;
+    width: 90%;
+  }
+  .cardDetails h3 {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .cardDetails .frontCardDits .up {
+    margin-top: 0.5em;
+  }
 }
 
-.cardDetails .frontCardDits .up .dates{
+.cardDetails .frontCardDits .up .dates {
   display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
 }
 
-
+.cardDetails .bottomArea {
+  position: relative;
+}
 .cardDetails .backCardDits {
+  position: relative;
+  /* border: 2px solid yellowgreen; */
+}
+.cardDetails .backCardDits h3 {
+  /* border: 2px solid rgb(102, 138, 31); */
+  position: absolute;
+  /* bottom: 38%;
+  left: 85%; */
+  top: 48%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: right;
+  color: white;
+  font-size: 24px;
+}
+
+.cardDetails .frontCardDits .up .dates {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
 }
 
 .formAreaHome {

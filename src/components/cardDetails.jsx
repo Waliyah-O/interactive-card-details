@@ -15,19 +15,23 @@ const CardDetails = () => {
         <img src={frontCard} alt="" />
         <div className="frontCardDits">
           <h1>{cardNumber}</h1>
+
           <div className="up">
             <h3>{cardName}</h3>
+
             <div className="dates">
               <h3>{cardExpDateMonth}</h3>
-              <em>/</em>
+              <p>/</p>
               <h3>{cardExpDateYear}</h3>
             </div>
           </div>
         </div>
       </div>
-      <div className="backCardDits">
-        <img className="img2" src={backCard} alt="" />
-        <h3>{cardCVC}</h3>
+      <div className="bottomArea">
+        <div className="backCardDits">
+          <img className="img2" src={backCard} alt="" />
+          <h3>{cardCVC}</h3>
+        </div>
       </div>
     </div>
   );
