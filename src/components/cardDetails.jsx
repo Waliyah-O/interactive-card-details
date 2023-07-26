@@ -15,8 +15,10 @@ const CardDetails = () => {
         <img src={frontCard} alt="" />
         <div className="frontCardDits">
           <h1>{cardNumber}</h1>
+          <div className="up">
           <h3>{cardName}</h3>
           <h3>{cardExpDate}</h3>
+          </div>
         </div>
       </div>
       <div className="backCardDits">

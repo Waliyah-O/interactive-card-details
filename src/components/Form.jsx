@@ -38,7 +38,6 @@ const Form = () => {
             isLabel={true}
             type="number"
             placeholder="00"
-            onInput={(e) => setCardCVC(e.target.value)}
           />
         </div>
         <CustomInput
@@ -46,6 +45,7 @@ const Form = () => {
           labelText={"cvc"}
           type="number"
           placeholder="000"
+          onInput={(e) => setCardCVC(e.target.value)}
         />
       </div>
 
