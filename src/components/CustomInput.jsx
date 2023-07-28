@@ -2,8 +2,8 @@ const CustomInput = (props) => {
   const { isLabel, labelText } = props;
   return (
     <div className="inputMain">
+      {isLabel && <label htmlFor={labelText}>{labelText}</label>}
       <div className="inputField">
-        {isLabel && <label htmlFor={labelText}>{labelText}</label>}
         <input className="inputArea" type="text" {...props} />
       </div>
     </div>

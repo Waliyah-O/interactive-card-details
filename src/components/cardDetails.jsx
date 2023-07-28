@@ -30,6 +30,8 @@ const CardDetails = () => {
       <div className="bottomArea">
         <div className="backCardDits">
           <img className="img2" src={backCard} alt="" />
+        </div>
+        <div className="backCardDitsh3">
           <h3>{cardCVC}</h3>
         </div>
       </div>

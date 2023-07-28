@@ -10,40 +10,92 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
 }
-.form {
-  width: 98%;
+/* customInput.jsx */
+.inputMain {
   height: 100%;
+  width: 100%;
+}
+
+.formAreaHome {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 100vh;
 }
 
 .inputField {
-  width: 98%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.inputArea {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.inputArea {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  padding: 7px;
+  gap: 2em;
+  border-radius: 8px;
+  color: hsl(278, 68%, 11%);
+  border: 1px solid hsl(278, 68%, 11%);
 
-.details {
+}
+
+.inputArea:active{
+  border: 0.5px solid linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
+}
+
+/* form.jsx */
+.form {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formWrapper {
+  margin: 10px;
+  width: 100%;
+  height: 50%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  box-shadow: 2px 2px 11px -6px rgba(0, 0, 0, 0.75);
+}
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dateAndCVC {
+  display: flex;
+  gap: 1em;
+}
+
+.dateAndCVC .date {
+  display: flex;
+  flex: 1;
+  gap: 0.5em;
 }
 
 .date {
   display: flex;
+}
+
+.dateAndCVC .andButton {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid yellow;
+}
+
+.dateAndCVC .justCVC {
+  flex: 1;
 }
 
 /* cardDetails.jsx */
@@ -55,7 +107,7 @@
   align-items: flex-end;
   justify-content: center;
   height: 100%;
-  /* border: 2px solid red; */
+  padding: 5px;
 }
 
 .cardDetails {
@@ -66,14 +118,7 @@
   justify-content: center;
   color: hsl(0, 0%, 100%);
   gap: 2em;
-  /* border: 2px solid blue; */
-  /* height: 100%;
-  width: 100%; */
 }
-
-/* .cardDetails > img{
-  margin-right: 6em;
-} */
 
 .cardDetails .img2 {
   margin-left: 6em;
@@ -86,7 +131,8 @@
   max-width: 100%;
   height: auto;
   border-radius: 14px;
-  box-shadow: 2px 2px 21px -6px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  box-shadow: 2px 2px 11px -6px rgba(0, 0, 0, 0.75);
 }
 
 .cardDetails .topArea {
@@ -108,19 +154,35 @@
   font-size: 24px;
 }
 .cardDetails .frontCardDits h1 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 500;
   width: 90%;
 }
 
 .cardDetails .frontCardDits .up {
-  /* border: 2px solid yellow; */
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 0.5em;
-  /* border: 2px solid red; */
+}
+.andButton {
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+}
+
+.andButton button {
+  font-size: 14px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: transparent;
 }
 @media screen and (max-width: 900px) {
   .cardDetails .frontCardDits h1 {
@@ -134,6 +196,7 @@
   }
   .cardDetails .frontCardDits .up {
     margin-top: 0.5em;
+    display: flex;
   }
 }
 
@@ -147,26 +210,20 @@
 .cardDetails .bottomArea {
   position: relative;
 }
-.cardDetails .backCardDits {
-  position: relative;
-  /* border: 2px solid yellowgreen; */
-}
-.cardDetails .backCardDits h3 {
-  /* border: 2px solid rgb(102, 138, 31); */
+
+.cardDetails .backCardDitsh3 {
   position: absolute;
-  /* bottom: 38%;
-  left: 85%; */
   top: 48%;
-  left: 85%;
+  left: 87%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  text-align: right;
+  width: 10%;
   text-align: right;
   color: white;
-  font-size: 24px;
 }
 
 .cardDetails .frontCardDits .up .dates {
@@ -174,16 +231,6 @@
   width: 20%;
   align-items: center;
   justify-content: center;
-}
-
-.formAreaHome {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  /* border: 2px solid green; */
 }
 
 .background {
